@@ -1,0 +1,630 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+nav div{
+    width: 75%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    letter-spacing: 2px;
+}
+
+nav div ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+nav div ul li a:hover {
+    color: #D9832E;
+}
+
+nav div h1{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+header .container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.subtitle {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+}
+
+.cotation {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.dev {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.action{
+    display: flex;
+    column-gap: 10px;
+}
+
+.action button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 16px;
+}
+
+.work-btn {
+    background-color: #D9832E;
+    border-style: none;
+    color: white;
+}
+
+.hire-btn {
+    background-color: white;
+    border-style: none;
+    color: #D9832E;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #D9832E;
+}
+
+.work-btn:hover {
+    background-color: #090A0C;
+    transition: 0.5s;
+}
+
+.hire-btn:hover {
+    background-color: #D9832E;
+    color: white;
+    transition: 0.5s;
+}
+
+.about-me {
+    background-color: #EAEDF2;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.about-me .container {
+    width: 75%;
+}
+
+.about-me h1 {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.about-me p {
+    letter-spacing: 2px;
+}
+
+.about-image-box {
+    display: flex;
+    gap: 48px;
+    margin-top: 48px;
+    align-items: center;
+}
+
+.image-box{
+    background-color: white;
+    padding: 14px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.social-box {
+    width: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 2px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.social-box button {
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    background-color: #EA9A39;
+    color: white;
+}
+
+.social-box button:hover{
+    background-color: black;
+}
+
+.lead {
+    font-weight: 500;
+}
+
+.pers-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pers-info .lable {
+    display: flex;
+    align-items: center;
+}
+
+.pers-info .lable h5{
+    border-right-width: 1px;
+    border-right-color: gray;
+    border-right-style: solid;
+    padding-right: 42px;
+    margin-right: 24px;
+    font-weight: 500;
+}
+
+.dwn {
+    border-style: none;
+    background-color: #EA9A39;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-top: 24px;
+}
+
+.skills {
+    padding-top: 58px;
+    padding-bottom: 58px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills .container {
+    width: 75%;
+}
+
+.skills-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    margin-top: 40PX;
+}
+
+.skills .card {
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #EA9A39;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 #ddd;
+}
+
+.skills .card-box {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+
+.p-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.percentage {
+    width: 50%;
+}
+
+.p-main {
+    height: 6px;
+    background-color: #ddd;
+}
+
+.p-92 {
+    width: 92%;
+    background-color: #EA9A39;
+    height: 100%;
+}
+
+.p-75 {
+    width: 75%;
+    background-color: #EA9A39;
+    height: 100%;
+}
+
+.p-86 {
+    width: 86%;
+    background-color: #EA9A39;
+    height: 100%;
+}
+
+.p-88 {
+    width: 88%;
+    background-color: #EA9A39;
+    height: 100%;
+}
+
+.percent-all {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.services {
+    background-color: #EAEDF2;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    display: flex;
+    justify-content: center;
+}
+
+.services .container {
+    width: 75%;
+}
+
+.services-box {
+    margin-top: 48px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.services-box .card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    width: 26%;
+}
+
+.services-box .card:hover {
+    background-color: #EA9A39;
+}
+
+.services-box .card button {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border-color: #EA9A39;
+    border-style: dotted;
+    border-width: 2px;
+    background-color: white;
+    font-size: 24px;
+    color: #EA9A39;
+}
+
+.latest-works {
+    display: flex;
+    justify-content: center;
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+.latest-works .container {
+    width: 75%;
+}
+
+.latest-works .image-box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.latest-works .image-box img {
+    border-radius: 10px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    background-color: #EAEDF2;
+}
+
+.testimonials .container {
+    width: 75%;
+}
+
+.carousel {
+     display: flex;
+     gap: 32px;
+}
+
+.carousel .card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    width: 50%;
+    display: flex;
+    column-gap: 16px;
+    align-items: start;
+    margin-top: 32px;
+}
+
+.carousel .card img {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.carousel .card .card-content p{
+    padding: 0;
+    margin: 0;
+    text-align:justify;
+    color: gray;
+}
+
+.carousel .card .card-content h4 {
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.latest-blogs {
+    display: flex;
+    justify-content: center;
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+.latest-blogs .container {
+    width: 75%;
+}
+
+.blog {
+    display: flex;
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.blog .card-content {
+    position: relative;
+    top: -100px;
+    left: 19px;
+}
+
+.blog .card-content h6{
+    background-color: #EA9A39;
+    width: fit-content;
+    padding: 8px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.blog .card-content h4 {
+    font-weight: 500;
+}
+
+.blog .card-content p {
+    color: gray;
+}
+
+.blog .card-content div{
+    background-color: white;
+    box-shadow: 0 0 10px 0 #ddd;
+    padding: 20px;
+    width: 75%;
+}
+
+.blog .card-content button {
+    background-color: white;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.blog .card-content h4 {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.blog .card-content a {
+    color: #EA9A39;
+    font-weight: 500;
+}
+
+.get {
+    display: flex;
+    justify-content: center;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    background-color: #EAEDF2;
+}
+
+.get .container {
+    width: 75%;
+}
+
+.form-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 48px;
+    align-items: start;
+}
+
+.form-card {
+    width: 70%;
+    background-color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 #ddd;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card form div {
+    display: flex;
+    gap: 32px;
+}
+
+.form-card form div input {
+    width: 50%;
+}
+
+.form-card textarea {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    height: 111px;
+}
+
+.form-card textarea:focus{
+    outline-style: none;
+}
+
+.form-card input:focus{
+    outline-style: none;
+}
+
+.form-card button {
+    width: fit-content;
+    border-style: none;
+    background-color: #EA9A39;
+    color: white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 24px;
+}
+
+.form-card input {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
+    padding-top: 20px;
+    padding-bottom: 24px;
+
+}
+
+.form-info {
+    width: 30%;
+}
+
+.form-info .card {
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.form-info .card button {
+    width: 75px;
+    height: 48px;
+    background-color: #EA9A39;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    border-style: none;
+}
+
+.form-info .card h4{
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container {
+    width: 75%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer .container button {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    border-style: none;
+    background-color: inherit;
+    color: #ccc;
+}
+
+.footer .container button:hover {
+    color: white;
+}
