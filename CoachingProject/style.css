@@ -1,0 +1,1114 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1b0238;
+    font-weight: 700;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #1b0238;
+    font-weight: 700;
+}
+
+nav div button {
+    border: none;
+    background: #ea512e;
+    color: white;
+    padding: 16px 38px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.toolbar {
+    display: none;
+}
+
+.toolbar span {
+    font-size: 40px;
+}
+
+.toggler {
+    position: relative;
+}
+
+.toggler a {
+    font-size: 16px;
+    padding: 16px;
+}
+
+.toggler .dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 250px;
+    background: white;
+    top: 50px;
+    right: 0;
+    align-items: start;
+    gap: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggler a:hover {
+    background: #2C285E;
+    width: 100%;
+    color: white;
+}
+
+.toggler:hover .dropdown {
+    display: flex;
+}
+
+.hero {
+    height: 650px;
+    background: #F1E7FF;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+.hero .circle {
+    width: 40%;
+    background: #FEF8F8;
+    height: 900px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.hero .circle .girl {
+    width: 680px;
+    position: absolute;
+    bottom: 10px;
+    right: 68px;
+}
+
+.cloud {
+    position: absolute;
+    bottom: -110px;
+}
+
+.hero .header {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    position: relative;
+}
+
+.hero .header .toolbar {
+    display: flex;
+    gap: 16px;
+}
+
+.hero .header h6 {
+    color: #EA5164;
+    font-size: 16px;
+}
+
+.hero .header h1 {
+    color: #1B0238;
+    font-size: 60px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero .header p {
+    color: gray;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-right: 20%;
+}
+
+.hero .header .learn-more {
+    border: none;
+    background: #ea512e;
+    padding: 14px 28px;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px; 
+}
+
+.hero .header .find-more {
+    border: none;
+    background: #f5890d;
+    padding: 14px 28px;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px; 
+}
+
+.hero .banner-1 {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 100px;
+    animation: move 2s infinite linear alternate;
+}
+
+.hero .banner-2 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 100px;
+    animation: move-right-top 2s infinite linear alternate;
+}
+
+.hero .banner-3 {
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    width: 100px;
+    animation: move-left-buttom 2s infinite linear alternate;
+}
+
+.hero .banner-4 {
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+    width: 100px;
+    z-index: 100000;
+    animation: move-right-buttom 2s infinite linear alternate;
+}
+
+.child-section {
+    padding: 100px 10%;
+    display: flex;
+    gap: 48px;
+}
+
+.child-section .title {
+    font-size: 40px;
+    color: #1B0238;
+}
+
+.child-section .desc {
+    color: #6B6B84;
+    line-height: 30px;
+}
+
+.child-section .list-box {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.child-section .list-box button {
+    background: #ea512e;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 4px;
+    font-weight: 700;
+}
+
+.child-section .list-box span {
+    color: #1B0238;
+    font-weight: 700;
+}
+
+.child-section .list-box .container {
+    width: 50%;
+}
+
+.child-section .read-more {
+    border: none;
+    background: #ea512e;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.single-child {
+    width: 596px;
+    height: 596px;
+    border-radius: 50%;
+}
+
+.child-section .owl {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 100px;
+    animation: move-right-buttom1 2s infinite linear alternate;
+}
+
+.child-section .who-we-are {
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    color: #ea512e;
+}
+
+.popular-classes {
+    padding: 70px 10%;
+    background: #FDF6ED;
+    position: relative;
+}
+
+.popular-classes .card-box {
+    display: flex;
+    gap: 24px;
+    position: relative;
+    z-index: 100000;
+}
+
+.popular-classes .card-box .card {
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 4px;
+}
+
+.popular-classes .card-box .card .card-image img {
+    width: 100%;
+}
+
+.popular-classes .card-box .card-content {
+    padding: 16px 32px;
+}
+
+.popular-classes .card-box .card-content h2 {
+    color: #fd7e14;
+    padding: 0;
+    margin: 0;
+}
+
+.popular-classes .card-box .card-content p {
+    color: #9BA1AB;
+    line-height: 24px;
+}
+
+.popular-classes .card-box .card-content .info {
+    display: flex;
+    gap: 16px;
+}
+
+.popular-classes .card-box .card-content .info label {
+    font-weight: bold;
+}
+
+.popular-classes .card-box .card-content .class-btn {
+    background: #ea512e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 32px;
+    margin-top: 20px;
+}
+
+.popular-classes .head{
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    color: #ea512e;
+    font-size: 24px;
+}
+
+.popular-classes .title {
+    text-align: center;
+}
+
+.popular-classes .title {
+    font-size: 40px;
+    color: #1b0238;
+    margin-bottom: 60px;
+}
+
+.popular-classes .card-image {
+    overflow: hidden;
+}
+
+.popular-classes .card-image:hover img {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.popular-classes .bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.popular-classes .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+}
+
+.teacher {
+    padding: 100px 10%;
+    display: flex;
+    gap: 32px;
+    align-items: start;
+    position: relative;
+}
+
+.teacher .shape-1 {
+    position: absolute;
+    top: 32px;
+    left: 24px;
+}
+
+.teacher .shape-3 {
+    position: absolute;
+    bottom: 70px;
+    left: 24px;
+}
+
+.teacher .shape-2 {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+.teacher .core {
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    color: #ea512e;
+}
+
+.teacher .title {
+    color: #1B0238;
+    font-size: 40px;
+}
+
+.teacher .badge {
+    display: flex;
+    gap: 32px;
+    align-items: start;
+    z-index: 100000;
+}
+
+.teacher .badge h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    color: #1B0238;
+}
+
+.teacher .badge p {
+    color: #9696a8;
+}
+
+.teacher .circle-one {
+    border: 1px solid #d3f5fe;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.teacher .circle-one div {
+    background: #d3f5fe;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.teacher .badge:hover .circle-one {
+    border-color: #EA512E;
+}
+
+.teacher .badge:hover .circle-one div {
+    background: #EA512E;
+    color: white;
+}
+
+.teacher .circle-two {
+    border: 1px solid #fce0ad;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.teacher .circle-two div {
+    background: #fce0ad;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.teacher .badge:hover .circle-two {
+    border-color: #EA512E;
+}
+
+.teacher .badge:hover .circle-two div {
+    background: #EA512E;
+    color: white;
+}
+
+.teacher .circle-three {
+    border: 1px solid #fbc9d5;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.teacher .circle-three div {
+    background: #fbc9d5;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.teacher .badge:hover .circle-three {
+    border-color: #EA512E;
+}
+
+.teacher .badge:hover .circle-three div {
+    background: #EA512E;
+    color: white;
+}
+
+.badge-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.team {
+    padding: 100px 16px;
+    background: #FAF7F2;
+    text-align: center;
+}
+
+.team .core-team {
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    color: #ea512e;
+}
+
+.team .meet-our {
+    font-size: 45px;
+    color: #1B0238;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.team .container {
+    display: flex;
+    gap: 32px;
+    overflow: hidden;
+}
+
+.team .container h2 {
+    color: #1B0238;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.team .container p {
+    color: #EA512E;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.team .container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team .social {
+    position: absolute;
+    bottom: -30%;
+    left: 22%;
+    display: flex;
+    gap: 8px;
+}
+
+.team .container .one:hover .team .social {
+    animation: slide 0.5s linear forwards;
+}
+
+.team .social button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ea512e;
+    color: white;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback {
+    padding: 100px 10%;
+}
+
+.feedback .subtitle {
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    color: #ea512e;
+    font-size: 20px;
+    text-align: center;
+}
+
+.feedback .title {
+    color: #1B0238;
+    font-size: 40px;
+    text-align: center;
+}
+
+.feedback .swiper-wrapper .circle-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.feedback .swiper-wrapper .circle {
+    height: 350px;
+    background: #FEE9CA;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px;
+}
+
+.feedback .swiper-wrapper .circle h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #1b0238;
+}
+
+.feedback .swiper-wrapper .circle p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: #6B6B94;
+}
+
+.feedback .swiper-wrapper .circle h5 {
+    padding: 0;
+    margin: 0;
+    color: #EA512E;
+}
+
+.quote {
+    border: none;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 50px;
+    padding-top: 15px;
+    margin-bottom: 16px;
+    color: #EA512E;
+}
+
+.upcoming-events {
+    background: url('Images/event-bg.jpg');
+    background-size: cover;
+    padding: 100px 10%;
+}
+
+.upcoming-events .subtitle {
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.upcoming-events .title {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.upcoming-events .card-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.upcoming-events .card-box .card {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    padding-right: 100px;
+    border-radius: 16px;
+}
+
+.upcoming-events .card-box .content h3 {
+    font-size: 24px;
+    color: #1b0238;
+    padding: 0;
+    margin: 0;
+}
+
+.upcoming-events .card-box .calendar h1 {
+    font-size: 60px;
+    color: #EA512E;
+    padding: 0;
+    margin: 0;
+}
+
+.upcoming-events .card-box .calendar p {
+    color: #EA512E;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-news {
+    padding: 80px 10%;
+}
+
+.latest-news .subtitle {
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    color: #ea512e;
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-news .title {
+    font-size: 50px;
+    color: #1B0238;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.latest-news .container .card-content {
+    background: #FDEEE9;
+    padding: 24px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.latest-news .container {
+    display: flex;
+    gap: 24px;
+}
+
+.latest-news .container .card {
+    width: 100%;
+    overflow: hidden;
+}
+
+.latest-news .container img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.latest-news .container img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.latest-news .container .card-content h3 {
+    font-size: 18px;
+    color: #1B0238;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-news .container .card-content p {
+    color: #6B6B84;
+}
+
+.latest-news .container .card-content button {
+    border: none;
+    background: #EA512E;
+    color: white;
+    padding: 16px 48px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.latest-news .container .card-content .action {
+    display: flex;
+    gap: 32px;
+}
+
+.footer {
+    height: 500px;
+    background: url('Images/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.footer .dark {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    gap: 24px;
+    padding: 80px 10%;
+}
+
+.footer .dark .card-first {
+    width: 100%;
+}
+
+.footer .dark .card-first h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.footer .dark .card-first p {
+    color: white;
+}
+
+.footer .dark .card-first button {
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: white;
+    background: #EA512E;
+}
+
+.footer .dark .card-first .icon-box {
+    display: flex;
+    gap: 12px;
+}
+
+.footer .card-second {
+    width: 100%;
+}
+
+.footer .card-second .border-bottom h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.footer .card-second .box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer .card-second .box h4 {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer .card-second .box i {
+    font-size: 24px;
+    color: #EA512E;
+}
+
+.footer .card-third {
+    width: 100%;
+}
+
+.footer .card-third ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer .card-third ul a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer .card-third ul a:hover {
+    color: #EA512E;
+}
+
+.footer .card-fourth {
+    width: 100%;
+}
+
+.footer .card-fourth .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.footer .card-fourth .gallery img {
+    width: calc(33.33% - 4px); 
+}
+
+@keyframes move {
+    0% {
+        left: 50px;
+    }
+    100% {
+        left: 10px;
+    }
+}
+
+@keyframes move-right-top {
+    0% {
+        right: 10px;
+    }
+    100% {
+        right: 50px;
+    }
+}
+
+@keyframes move-left-buttom {
+    0% {
+        left: 50px;
+    }
+    100% {
+        left: 10px;
+    }
+}
+
+@keyframes move-right-buttom {
+    0% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+@keyframes move-right-buttom1 {
+    0% {
+        right: -70px;
+    }
+    100% {
+        right: -100px;
+    }
+}
+
+@keyframes slide {
+    0% {bottom: -30%;}
+    100% {bottom: 30%;}
+}
+
+@media(max-width: 768px) {
+    .toolbar {
+        display: flex;
+    }
+
+    .tool-btn {
+        display: none;
+    }
+
+    nav {
+        padding: 10px 16px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .header {
+        flex-direction: column;
+    }
+
+    .hero .circle {
+        background: transparent;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hero .cloud {
+        display: none;
+    }
+
+    .hero .circle .girl {
+        width: 100%;
+        position: unset;
+    }
+
+    .hero .banner-1, .hero .banner-2, .hero .banner-3, .hero .banner-4 {
+        display: none;
+    }
+
+    .hero .header {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 24px;
+    }
+
+    .hero .header h1, .hero .header h6 {
+        margin: 0;
+    }
+
+    .hero .header h1 {
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
+    .hero .header p {
+        padding-right: 0;
+    }
+
+    .child-section .owl {
+        display: none;
+    }
+
+    .child-section {
+        flex-direction: column;
+        padding: 24px;
+        padding-top: 40px;
+    }
+
+    .child-section .single-child {
+        width: 420px;
+        height: 420px;
+    }
+
+    .child-section-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .child-section {
+        gap: 0;
+    }
+
+    .popular-classes {
+        padding: 32px;
+    }
+
+    .popular-classes .card-box {
+        flex-direction: column;
+    }
+
+    .popular-classes .title {
+        margin-bottom: 24px;
+    }
+
+    .popular-classes .bottom-left, .popular-classes .bottom-right {
+        display: none;
+    }
+
+    .teacher {
+        padding: 16px;
+        flex-direction: column;
+    }
+
+    .teacher .teacher-pic {
+        width: 100%;
+    }
+
+    .teacher .shape-1 {
+        display: none;
+    }
+
+    .teacher .shape-2 {
+        display: none;
+    }
+
+    .teacher .shape-3 {
+        display: none;
+    }
+
+    .team {
+        padding: 16px;
+    }
+
+    .team .container {
+        flex-direction: column;
+    }
+
+    .team .meet-our {
+        margin-bottom: 24px;
+    }
+
+    .upcoming-events {
+        padding: 24px;
+    }
+
+    .upcoming-events .card {
+        flex-direction: column;
+    }
+
+    .latest-news {
+        padding: 24px;
+    }
+
+    .latest-news .container {
+        flex-direction: column;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer .dark {
+        flex-direction: column;
+        height: auto;
+        padding: 24px;
+    }
+
+}
